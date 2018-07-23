@@ -14,7 +14,7 @@ fi
 
 if [ $# -eq 0 ]
 then
-	echo "1.usage: 1.factorial.sh [n]"
+	echo "usage: 1.factorial.sh [n]"
 	echo "calculates a number's factorial"
 else
 	factorial $1
