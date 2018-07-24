@@ -48,7 +48,8 @@ filename="${filename##*/}"			#最后取尾/
 
 Example:
 
-Input : ./2.self_compression.sh  ~/Desktop/shell_script/shell/shell.tar.bz2 ./
+Input : 
+./2.self_compression.sh  ~/Desktop/shell_script/shell/shell.tar.bz2 ./
 Output:
 Archive:  /home/user/Desktop/shell_script/shell/shell.tar.bz2
    	creating:  ./shell/
@@ -56,7 +57,8 @@ Archive:  /home/user/Desktop/shell_script/shell/shell.tar.bz2
   inflating:  ./shell/Untitled Document 3
   inflating:  ./shell/Untitled.h
 
-Input : ./2.self_compression.sh ~/Desktop/shell_script/shell/shell.zip ./
+Input : 
+./2.self_compression.sh ~/Desktop/shell_script/shell/shell.zip ./
 Output:
 Archive:  /home/ryu/Desktop/shell_script/shell/shell.zip
    	creating:  ./shell/
@@ -64,7 +66,7 @@ Archive:  /home/ryu/Desktop/shell_script/shell/shell.zip
   inflating:  ./shell/Untitled Document 2
   inflating:  ./shell/Untitled Document 3
 
-#----------------------------------------------------------------------------
+#------------------------------------END------------------------------------
 
 #--------------------------------3.file_size.sh------------------------------
 
@@ -79,19 +81,23 @@ Archive:  /home/ryu/Desktop/shell_script/shell/shell.zip
 第五步:将文件大小分类为B,K,M,G.
 
 获取文件大小: `ls -l ${file[$j]} | awk '{print $5}'`
+
 Example:
 
-Input : ./3.file_size.sh -n 3 -d ~/Desktop/DDNS/HASH/
+Input : 
+./3.file_size.sh -n 3 -d ~/Desktop/DDNS/HASH/
 Output:
 The largest files/directories in /home/user/Desktop/DDNS/HASH/ are:
     1   7.5K INSERTHASH.h
     2   3.7K test.c
     3   1.5K TRAVERSE.c
 
-Input : ./3.file_size.sh -n 3
+Input : 
+./3.file_size.sh -n 3
 Output:
 The largest files/directories in ./ are:
     1   2.4K    README.md
     2   1.3K    3.file_size.sh
     3   881B    2.self_compression.sh
-
+	
+#----------------------------------END-------------------------------------
